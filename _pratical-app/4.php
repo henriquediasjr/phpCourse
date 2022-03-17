@@ -13,8 +13,25 @@
 
 <article class="main-content col-xs-8">
 
-	
 	<?php  
+
+	function calculation(){
+		$number1 = 20;
+		$number2 = 50;
+
+		$sum = $number1 + $number2;
+		return $sum;
+	}
+
+	$theSum = calculation();
+	echo $theSum;
+
+	function sayHi($hello){
+		echo $hello;
+	}
+
+	sayHi("hello world");
+
 
 /*  Step1: Define a function and make it return a calculation of 2 numbers
 
@@ -22,6 +39,8 @@
 
 
  */
+
+ 
 
 	
 ?>

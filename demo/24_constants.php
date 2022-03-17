@@ -13,7 +13,7 @@ $number = 1000;
 $number = "Edwin";
 echo $number . "<br>";
 
-define("NAME", 1000);
+define("NAME", 1000);//define a const;
 
 echo NAME;
 

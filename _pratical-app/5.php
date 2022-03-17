@@ -14,6 +14,31 @@
 	
 	<?php 
 
+if(10 <= 10){
+	echo "I love PHP <br>";
+}else if(10 > 4){
+	echo "I dont love PHP";
+}else{
+	echo "goodbye";
+}
+
+for($i = 0; $i <= 10; $i++){
+   echo $i . "<br>";
+}
+
+$value = 10;
+
+switch($value){
+	case 10: 
+	   echo "this is it man";
+	   break;
+   case 20: 
+	   echo "this is not right";
+	   break;
+}
+   
+	echo rand(1, 1000);
+
 
 /*  Step1: Use a pre-built math function here and echo it
 
