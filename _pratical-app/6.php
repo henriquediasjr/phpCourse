@@ -12,18 +12,23 @@
 
 
 <article class="main-content col-xs-8">
- 
 
-	<?php  
-
+<?php  
 /*  Step1: Make a form that submits one value to POST super global
-
-
  */
+if(isset($_POST['submit'])) {
+	echo $_POST['submit'] . "<br> " . "foi deu certo";
+}
 
 	
 ?>
 
+
+	<form action="6.php" method="POST">
+	<input type="submit" name="submit" value="SUBMIT"/></form>
+ 
+
+	
 
 </article><!--MAIN CONTENT-->
 <?php include "includes/footer.php"; ?>

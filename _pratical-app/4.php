@@ -17,7 +17,7 @@
 
 	function calculation(){
 		$number1 = 20;
-		$number2 = 50;
+		$number2 = 30;
 
 		$sum = $number1 + $number2;
 		return $sum;
