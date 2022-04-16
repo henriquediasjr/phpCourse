@@ -1,6 +1,10 @@
 <?php include "db.php";
 include "functions.php";
 
+if(isset($_POST['submit'])) {
+    UpdateTable();
+}
+
 ?>
 
 
@@ -33,7 +37,7 @@ include "functions.php";
                     </select>
                 </div>
 
-                <input class="btn btn-primary" type="submit" name="submit" value="Submit"/> 
+                <input class="btn btn-primary" type="submit" name="submit" value="UPDATE"/> 
             </form>
     </div>
 
