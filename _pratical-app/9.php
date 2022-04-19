@@ -17,7 +17,9 @@
 			
 		
 	
-	<?php 
+	<?php session_start();
+
+	$_SESSION['message'] = 'Hello world';
 
 	/*  Create a link saying Click Here, and set 
 	the link href to pass some parameters and use the GET super global to see it
@@ -26,10 +28,30 @@
 
 		Step 3 - Start a session and set it to value, any value you want.
 	*/
+
+	$expiration = time() + (60 * 60 * 24 * 7);
+
+	setcookie("cookieTest", "ValueCookie", $expiration);
+
+	if(isset($_GET['source'])){
+		echo $_GET['source'];
+	}
 	
 	?>
 
+	<a href="9.php?source=1234">CLICK HERE</a>
+	<br>
 
+	<?php
+		if(isset($_COOKIE['cookieTest'])){
+			echo $_COOKIE['cookieTest'];
+		}
+		echo '<br>';
+
+		if(isset($_SESSION['message'])){
+			echo $_SESSION['message'];
+		}
+	?>
 
 
 

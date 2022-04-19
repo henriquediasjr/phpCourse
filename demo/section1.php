@@ -1,3 +1,10 @@
+<?php session_start();
+$_SESSION['greeting'] = "Hello Student
+I'm Henrique";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,3 +16,4 @@
 </body>
 </html>
 
+`
