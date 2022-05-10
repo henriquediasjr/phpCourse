@@ -35,7 +35,7 @@
                         echo "<h1> NO RESULT</h1>";
                     } else {
                         
-                    while($row = mysqli_fetch_assoc($search_query)){
+                    while($row = mysqli_fetch_assoc($search)){
                         $post_title = $row['post_title'];
                         $post_author = $row['post_author'];
                         $post_date = $row['post_date'];

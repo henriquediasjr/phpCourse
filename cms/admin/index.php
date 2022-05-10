@@ -3,9 +3,7 @@
     <div id="wrapper">
 
 
-        <?php 
-            if($connection) echo "fosdifjsdifjsd"
-        ?>
+       
 
         <!-- Navigation -->
         <?php include "includes/admin_navigation.php"; ?>
