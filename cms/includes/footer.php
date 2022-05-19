@@ -7,7 +7,7 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-        </footer>
+</footer>
 
     </div>
     <!-- /.container -->

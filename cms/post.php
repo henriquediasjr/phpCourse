@@ -179,7 +179,8 @@
             
 
         </div>
-        <!-- /.row -->    
+        <!-- /.row -->  
+        <?php include "includes/footer.php" ?>  
     </div>
 
     <?php include "includes/header.php" ?>
