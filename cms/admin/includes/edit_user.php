@@ -38,6 +38,13 @@ if(isset($_POST['edit_user'])){
 //     move_uploaded_file($post_image_temp, "../images/$post_image");
 
 
+    $query = "SELECT randSalt FROM users";
+    $select_randsalt_query = mysqli_query($connection, $query);
+    if(!$select_randsalt_query) {
+        die('QUERY FAILED!' . mysqli_error($connection));
+    }
+
+
     $query = "UPDATE users SET "; 
     $query .="user_firstname = '{$user_firstname}', ";
     $query .="user_lastname = '{$user_lastname}', "; 
