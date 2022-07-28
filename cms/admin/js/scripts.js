@@ -4,6 +4,7 @@ $(document).ready(function () {
     });
 });
 
+
 $(document).ready(function () {
 
     $('#selectAllBoxes').click(function (event) {
@@ -28,6 +29,14 @@ $(document).ready(function () {
 
 
 
-    })
+    });
 
-})
+});
+
+
+var div_box = "<div id='load-screen'><div id='loading'></div></div>";
+$("body").prepend(div_box);
+
+$('#load-screen').delay(200).fadeOut(600, function () {
+    $(this).remove();
+});

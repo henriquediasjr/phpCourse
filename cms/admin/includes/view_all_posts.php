@@ -81,8 +81,9 @@
         </thead>
         <tbody>
             <?php 
-                $query = "SELECT * FROM posts";
+                $query = "SELECT * FROM posts ORDER BY post_id DESC ";
                 $select_posts = mysqli_query($connection, $query);
+
                     while($row = mysqli_fetch_assoc($select_posts)){
                     $post_id = $row["post_id"];
                     $post_author = $row["post_author"];
@@ -94,9 +95,9 @@
                     $post_comments_count = $row["post_comment_count"];
                     $post_date = $row["post_date"];
                     echo "<tr>";
-                    ?>
+            ?>
                     <td><input class='checkBoxes' type='checkbox' name="checkboxArray[]" value="<?php echo $post_id;?>"></td>
-                    <?php
+            <?php
                     echo "<td>{$post_id}</td>";
                     echo "<td>{$post_author}</td>";
                     echo "<td>{$post_title}</td>";
